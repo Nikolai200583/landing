@@ -1,95 +1,86 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import { TheRegistrationFree } from "@/components/RegistrationFree/TheRegistrationFree";
+import { TheVkLogIn } from "@/components/VkLogin/TheVkLogIn";
+import { STATIC } from "./Static";
+import { ButtonItems } from "@/components/ButtonItems/ButtonItems";
+import { RegistrationForm } from "@/components/RegistrationForm/RegistrationForm";
+import { ImageContainerComp } from "@/components/ImageContainerComp/ImageContainerComp";
+import { Carts } from "@/components/Carts/Carts";
+
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="wrapper__content">
+      <section>
+        <TheVkLogIn
+         title={"NeoFamily — умная подготовка к ЕГЭ"}
+         text={
+           "Более 30 000 заданий по всем предметам ЕГЭ. Бесплатная теория, тесты и умное повторение"
+         }
+         buttonTextVk={"Войти через VK ID"}
+         buttonTextEnter={"Войти"}
+         /> 
+         <RegistrationForm/>
+         <ImageContainerComp/>   
+      </section>
+      <section>
+        <div className="buttonsContainer">
+        {STATIC.map((item)=>(
+          <ButtonItems
+          key={item}
+          text={item}/>
+        ))}
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+        <TheRegistrationFree
+          title={"Банк заданий по всем предметам"}
+          text={
+            "Десятки тысяч качественных заданий по твоим предметам. Формата ЕГЭ-2024, уровня сложности экзамена и выше, с ответами и пояснениями. Можно фильтровать по темам, линиям или использовать поиск! "
+          }
+          buttonText={"Зарегистрироваться бесплатно"}
+          textAgain={'Выбирай предмет и переходи в Банк заданий прямо сейчас!'}
         />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      </section>
+      <section>
+        <TheRegistrationFree
+          title={"Умные справочники"}
+          text={
+            "Вся нужная теория по темам ЕГЭ — на понятном языке и с дизайнерскими иллюстрациями. Идеально, чтобы создать фундамент знаний по предмету."
+          }
+          buttonText={"Зарегистрироваться бесплатно"}
+        />
+      </section>
+      <section>
+        <div className="cartsContainer">
+        <Carts
+        span={'Мой набор'}
+        title={'Модульные уравнения'}
+        text={'Карточек: 40'}
+        link={'Открыть набор'}/>
+        <Carts
+        span={'Умный справочник'}
+        title={'Сердечно-сосудистая система'}
+        text={'Карточек: 40'}
+        link={'Открыть набор'}/>
+        </div>
+      </section>
+      <section>
+        <TheRegistrationFree
+          title={"Варианты и тесты"}
+          text={
+            "Наша платформа имеет 4 способа генерации тестов – это покрывает любые сценарии создания вариантов как лично учеником, так и преподавателем. Наш интерфейс безумно удобен и дружелюбен."
+          }
+          buttonText={"Зарегистрироваться бесплатно"}
+        />
+      </section>
+      <section>
+      <TheVkLogIn
+         title={"Начни подготовку прямо сейчас!"}
+         text={
+           "Это бесплатно и точно тебе понравится."
+         }
+         buttonTextVk={"Войти через VK ID"}
+         buttonTextEnter={"Войти"}
+         />
+      </section>
+    </div>
+  );
 }

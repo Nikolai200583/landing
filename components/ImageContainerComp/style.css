@@ -1,0 +1,41 @@
+.container__svg {
+  position: relative;
+  width: 380px;
+  height: 372px;
+}
+span {
+  display: flex;
+  display: inline;
+  padding: 12px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 150px;
+  background: #fff;
+}
+.spanContent {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 180px;
+  top: 230px;
+  transform: rotate(-15deg);
+}
+.curl-bog {
+  position: absolute;
+  top: 100px;
+  left: 230px;
+}
+.comp {
+  position: absolute;
+  top: 100px;
+  left: 35px;
+}
+.play {
+  position: absolute;
+  left: 300px;
+  top: 40px;
+}
+.electro {
+  position: absolute;
+  left: 40px;
+}
