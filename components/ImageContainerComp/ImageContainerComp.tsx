@@ -17,8 +17,8 @@ const ImageContainerComp = () => {
         <use xlinkHref="img/sprite.svg#electro"></use>
       </svg>
       <div className="spanContent">
-      <span>Тебе</span>
-      <span>понравится</span>
+      <span className="image__span_1">Тебе</span>
+      <span className="image__span_2">понравится</span>
       </div>
     </div>
   );

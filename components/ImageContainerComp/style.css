@@ -3,12 +3,7 @@
   width: 380px;
   height: 372px;
 }
-span {
-  display: flex;
-  display: inline;
-  padding: 12px;
-  align-items: flex-start;
-  gap: 10px;
+.image__span_1 {
   border-radius: 150px;
   background: #fff;
 }
@@ -27,6 +22,8 @@ span {
 }
 .comp {
   position: absolute;
+  width: 380px;
+  height: 372px;
   top: 100px;
   left: 35px;
 }

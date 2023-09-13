@@ -1,0 +1,23 @@
+.container__svg_tech{
+    position: relative;
+    width: 634px;
+    height: 564px;
+  
+}
+.formula1{
+    position: absolute;
+    top:15%;
+    left: 45%
+}
+.formula2{
+    position: absolute;
+    top:17%;
+    left: 3%
+}
+.teach{
+    position: absolute;
+    width: 516px;
+    height: 371px;
+    top:25%;
+    left: 3%
+}
