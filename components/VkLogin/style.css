@@ -5,22 +5,21 @@
   align-self: flex-end;
   padding-bottom: 32px;
 }
-.container__title_vk { 
-  color:#302A3E;
-font-size: 56px;
-font-style: normal;
-font-weight: 700;
-line-height: 64px;
+.container__title_vk {
+  color: #302a3e;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
 }
-.buttonBox_vk{
-    display: flex;
-    gap: 16px;
-    
+.buttonBox_vk {
+  display: flex;
+  gap: 16px;
 }
-.container__text_vk{
-    width: 400px;
-    margin-top: 32px;
-    margin-bottom: 42px;
+.container__text_vk {
+  width: 400px;
+  margin-top: 32px;
+  margin-bottom: 42px;
 }
 .container__button_vk {
   width: 259px;
@@ -52,4 +51,8 @@ line-height: 64px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px; /* 150% */
+}
+.vk {
+  width: 24px;
+  height: 24px;
 }

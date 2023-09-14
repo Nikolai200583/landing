@@ -15,6 +15,9 @@ const ImageContainerComp = () => {
       </svg>
       <svg className="electro">
         <use xlinkHref="img/sprite.svg#electro"></use>
+      </svg>
+      <svg className="spam1">
+        <use xlinkHref="img/sprite.svg#spam1"></use>
       </svg>     
     </div>
   );

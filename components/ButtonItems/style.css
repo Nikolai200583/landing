@@ -1,51 +1,68 @@
 .button__items {
-  color: #302A3E;
+  position: relative;
+  color: #302a3e;
   font-size: 17.308px;
   font-style: normal;
   font-weight: 700;
   line-height: 17.308px;
-  display: flex;  
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
   align-items: center;
   height: 18px;
   border-radius: 162.983px;
   border: 2.163px solid #fff;
-  padding: 16px 23px;  
+  padding: 16px 23px;
+}
+.button__items::after {
+  content: url(/img/Union.png);
+  position: absolute;
+  left:93%;
+  top: -15%;
+  display: flex;
+  width: 16.113px;
+  height: 16.113px;
+  transform: rotate(0.215deg);
+  padding: 2.885px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 11.539px;
+  background: #302a3e;
 }
 .button__items:nth-child(1) {
-   background-color:#CDE0A4;
+  background-color: #cde0a4;
 }
 .button__items:nth-child(2) {
-    background-color: #D4DDEE;
- }
- .button__items:nth-child(3) {
-    background-color:#F9E48A;
- }
- .button__items:nth-child(4) {
-    background-color:#B3D4E5;
- }
- .button__items:nth-child(5) {
-    background-color:#ACD5B7;
-    box-shadow: 0px 1.44233px 7.9328px -2.88465px rgba(0, 0, 0, 0.19);
- }
- .button__items:nth-child(6) {
-    background-color:#F5C6AA;
- }
- .button__items:nth-child(7) {
-    background-color:#76C1C1;
- }
- .button__items:nth-child(8) {
-    background-color:#F4BE9A;
- }
- .button__items:nth-child(9) {
-    background-color:#DBDBDB;
- }
- .button__items:nth-child(10) {
-   background-color:#7CB8E0;
+  background-color: #d4ddee;
+}
+.button__items:nth-child(3) {
+  background-color: #f9e48a;
+}
+.button__items:nth-child(4) {
+  background-color: #b3d4e5;
+}
+.button__items:nth-child(5) {
+  background-color: #acd5b7;
+  box-shadow: 0px 1.44233px 7.9328px -2.88465px rgba(0, 0, 0, 0.19);
+}
+.button__items:nth-child(6) {
+  background-color: #f5c6aa;
+}
+.button__items:nth-child(7) {
+  background-color: #76c1c1;
+}
+.button__items:nth-child(8) {
+  background-color: #f4be9a;
+}
+.button__items:nth-child(9) {
+  background-color: #dbdbdb;
+}
+.button__items:nth-child(10) {
+  background-color: #7cb8e0;
 }
 .button__items:nth-child(11) {
-   background-color:#A3D8AF;
+  background-color: #a3d8af;
 }
 .button__items:nth-child(12) {
-   background-color:#B3D4E5;;
+  background-color: #b3d4e5;
 }

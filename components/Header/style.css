@@ -10,7 +10,7 @@
 .header__box {
   display: flex;
 }
-.header__box_logo {  
+.header__box_logo {
   width: 176px;
   height: 56px;
   margin-right: 64px;
@@ -34,4 +34,9 @@
   gap: 8px;
   border-radius: 160px;
   border: 2px solid #302a3e;
+}
+
+.iconContainer {
+  width: 24px;
+  height: 24px;
 }

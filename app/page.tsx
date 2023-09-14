@@ -21,6 +21,12 @@ export default function Home() {
           buttonTextVk={"Войти через VK ID"}
           buttonTextEnter={"Войти"}
         />
+        <svg className="try">
+          <use xlinkHref="img/sprite.svg#try"></use>
+        </svg>
+        <svg className="cross">
+          <use xlinkHref="img/sprite.svg#cross"></use>
+        </svg>
         <RegistrationForm />
         <ImageContainerComp />
       </section>
@@ -30,6 +36,9 @@ export default function Home() {
             <ButtonItems key={item} text={item} />
           ))}
         </div>
+        <svg className="zagigulina">
+        <use xlinkHref="img/sprite.svg#zagigulina"></use>
+      </svg>
         <TheRegistrationFree
           title={"Банк заданий по всем предметам"}
           text={
@@ -46,8 +55,8 @@ export default function Home() {
             "Вся нужная теория по темам ЕГЭ — на понятном языке и с дизайнерскими иллюстрациями. Идеально, чтобы создать фундамент знаний по предмету."
           }
           buttonText={"Зарегистрироваться бесплатно"}
-        /> 
-         <SmartDirectory/>      
+        />
+        <SmartDirectory />
       </section>
       <section>
         <div className="cartsContainer">
@@ -57,12 +66,16 @@ export default function Home() {
             text={"Карточек: 40"}
             link={"Открыть набор"}
           />
+
           <Carts
             span={"Умный справочник"}
             title={"Сердечно-сосудистая система"}
             text={"Карточек: 40"}
             link={"Открыть набор"}
           />
+          <svg className="mother">
+            <use xlinkHref="img/sprite.svg#mother"></use>
+          </svg>
         </div>
         <TheRegistrationFree
           title={"Умное повторение"}
@@ -80,7 +93,7 @@ export default function Home() {
           }
           buttonText={"Зарегистрироваться бесплатно"}
         />
-        <SelectionsForm/>        
+        <SelectionsForm />
       </section>
       <section>
         <TheVkLogIn
@@ -89,7 +102,7 @@ export default function Home() {
           buttonTextVk={"Войти через VK ID"}
           buttonTextEnter={"Войти"}
         />
-        <TeacherImages/>
+        <TeacherImages />
       </section>
     </div>
   );

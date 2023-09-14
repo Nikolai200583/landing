@@ -16,7 +16,12 @@ const TheHeader = () => {
           <Link href="/tests">Тесты</Link>
         </div>
       </div>
-      <a href="#" className="header__button">В банк знаний</a>
+      <a href="#" className="header__button">
+        <svg className="iconContainer">
+          <use xlinkHref="img/sprite.svg#iconContainer"></use>
+        </svg>
+        В банк знаний
+      </a>
     </header>
   );
 };

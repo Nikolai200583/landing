@@ -41,6 +41,7 @@ section:nth-child(1) {
   padding-top: 32px;
   gap: 32px;
   margin-bottom: 80px;
+  position: relative;
 }
 section:nth-child(2) {
   gap: 100px;
@@ -78,4 +79,26 @@ section:last-child {
   position: relative;
   width: 634px;
   height: 480px;
+}
+.mother {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: -10%;
+}
+.zagigulina {
+  z-index: 1;
+  position: absolute;
+  left: 47%;
+  top: 80%;
+}
+.try { 
+  position: absolute;
+  left: 33%;
+  top: 13%;
+}
+.cross { 
+  position: absolute;
+  left: 42%;
+  top: 63%;
 }

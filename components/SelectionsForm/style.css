@@ -95,8 +95,7 @@ label {
   user-select: none;
 }
 
-input[type="checkbox"].css-checkbox1 {
-  position: absolute;
+input[type="checkbox"].css-checkbox1, .css-checkbox2, .css-checkbox3  {
   overflow: hidden;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -106,7 +105,7 @@ input[type="checkbox"].css-checkbox1 {
   border: 0;
 }
 
-input[type="checkbox"].css-checkbox1 + label.css-label {
+input[type="checkbox"].css-checkbox1 + label.css-label, .css-checkbox2 + label.css-label, .css-checkbox3 + label.css-label {
   padding-left: 20px;
   height: 15px;
   display: inline-block;
@@ -118,7 +117,7 @@ input[type="checkbox"].css-checkbox1 + label.css-label {
   cursor: pointer;
 }
 
-input[type="checkbox"].css-checkbox1:checked + label.css-label {
+input[type="checkbox"].css-checkbox1:checked + label.css-label, .css-checkbox2:checked + label.css-label,.css-checkbox3:checked + label.css-label {
   background-position: 0 -15px;
 }
 
