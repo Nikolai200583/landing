@@ -29,13 +29,16 @@ const SelectionsForm = () => {
         Укажите количество заданий для каждой выбранной темы по указанной линии.
       </p>
       <div className="selections__check">
-        
+      <input type="checkbox" id="checkbox1" className="css-checkbox1"/>
+			<label htmlFor="checkbox1" className="css-label lite-plus">1 линия</label>
       </div>
       <div className="selections__check">
-        
+      <input type="checkbox" id="checkbox2" className="css-checkbox2"/>
+			<label htmlFor="checkbox2" className="css-label lite-plus">2 линия</label>
       </div>
       <div className="selections__check">
-        
+      <input type="checkbox" id="checkbox3" className="css-checkbox3"/>
+			<label htmlFor="checkbox3" className="css-label lite-plus">3 линия</label>
       </div>
     </div>
   );
