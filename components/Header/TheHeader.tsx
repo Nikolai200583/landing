@@ -1,19 +1,22 @@
-
-import './style.css'
+import "./style.css";
 import Link from "next/link";
-const TheHeader = () => {  
+const TheHeader = () => {
   return (
-    <header className='header'> 
-      <div className="linkBox">   
-      <svg className="logo">
-        <use xlinkHref="img/sprite.svg#icon-logo"></use>
-      </svg>
-      
-      <Link href="/items">Предметы</Link>
-      <Link href="/theory">Теория</Link>
-      <Link href="/repetition">Повторение</Link>
-      <Link href="/tests">Тесты</Link>  
-      </div>  
+    <header className="header">
+      <div className="header__box">
+        <div className="header__box_logo">
+          <svg>
+            <use xlinkHref="img/sprite.svg#icon-logo"></use>
+          </svg>
+        </div>
+        <div className="header__box_link">
+          <Link href="/items">Предметы</Link>
+          <Link href="/theory">Теория</Link>
+          <Link href="/repetition">Повторение</Link>
+          <Link href="/tests">Тесты</Link>
+        </div>
+      </div>
+      <a href="#" className="header__button">В банк знаний</a>
     </header>
   );
 };
