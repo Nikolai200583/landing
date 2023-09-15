@@ -1,5 +1,5 @@
 import "./style.css";
-
+import { animated } from '@react-spring/web'
 
 const ImageContainerComp = () => {
   return (
@@ -13,6 +13,7 @@ const ImageContainerComp = () => {
       <svg className="play">
         <use xlinkHref="img/sprite.svg#play"></use>
       </svg>
+      
       <svg className="electro">
         <use xlinkHref="img/sprite.svg#electro"></use>
       </svg>
