@@ -69,7 +69,24 @@ const TheFooter = () => {
             </div>
           </div>
         </div>
-
+          <div className="section__midle_right">
+            <div className="midle__right_ege">
+              <h2 className="right__ege_title">NeoFamily - умная подготовка к ЕГЭ</h2>
+              <p className="right__ege_text">Предметы</p>
+              <p className="right__ege_text">Теория</p>
+              <p className="right__ege_text">Повторение</p>
+              <p className="right__ege_text">Тесты</p>
+              <div className="right__ege_boxLink">
+                <a className="right__ege_Link" href="#">Политика конфиденциальности</a>
+                <a className="right__ege_Link" href="#">Оферта</a>
+                <a className="right__ege_Link" href="#">Пользовательское соглашение</a>
+              </div>
+            </div>
+            <div className="midle__right_project">
+              <h2 className="right__project_title">Проекты</h2>
+              <p className="right__project_text">NeoFamily</p>
+            </div>
+          </div>
       </div>
       <div className="footer__recuisit">
         <p>© ООО “НЕОФЭМИЛИ”</p>

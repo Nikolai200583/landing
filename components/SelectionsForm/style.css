@@ -79,12 +79,14 @@
 .selections__check {
   width: 634px;
   height: 64px;
-  gap: 8px;
   border-radius: 16px;
   background: #f9f8fb;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  align-self: stretch;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
 }
 label {
   -webkit-touch-callout: none;
@@ -95,7 +97,9 @@ label {
   user-select: none;
 }
 
-input[type="checkbox"].css-checkbox1, .css-checkbox2, .css-checkbox3  {
+input[type="checkbox"].css-checkbox1,
+.css-checkbox2,
+.css-checkbox3 {
   overflow: hidden;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -105,7 +109,9 @@ input[type="checkbox"].css-checkbox1, .css-checkbox2, .css-checkbox3  {
   border: 0;
 }
 
-input[type="checkbox"].css-checkbox1 + label.css-label, .css-checkbox2 + label.css-label, .css-checkbox3 + label.css-label {
+input[type="checkbox"].css-checkbox1 + label.css-label,
+.css-checkbox2 + label.css-label,
+.css-checkbox3 + label.css-label {
   padding-left: 20px;
   height: 15px;
   display: inline-block;
@@ -117,10 +123,34 @@ input[type="checkbox"].css-checkbox1 + label.css-label, .css-checkbox2 + label.c
   cursor: pointer;
 }
 
-input[type="checkbox"].css-checkbox1:checked + label.css-label, .css-checkbox2:checked + label.css-label,.css-checkbox3:checked + label.css-label {
+input[type="checkbox"].css-checkbox1:checked + label.css-label,
+.css-checkbox2:checked + label.css-label,
+.css-checkbox3:checked + label.css-label {
   background-position: 0 -15px;
 }
 
 .lite-plus {
   background-image: url(/img/checkbox.png);
+}
+.selections__check_button {
+  width: 80px;
+  height: 48px;
+  display: flex;
+  padding: 15px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  color: #c1c0c6;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  border-radius: 16px;
+  border: 1px solid #c1c0c6;
+  background: #fff;
+  margin-right: 8px;
+}
+.selections__check_box {
+  display: flex;
 }

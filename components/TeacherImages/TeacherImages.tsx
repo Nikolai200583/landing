@@ -13,6 +13,9 @@ const TeacherImages = () => {
       <svg className="teach">
         <use xlinkHref="img/sprite.svg#teach"></use>
       </svg>
+      <svg className="this">
+        <use xlinkHref="img/sprite.svg#this"></use>
+      </svg>
      
       
     </div>

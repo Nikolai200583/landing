@@ -122,3 +122,42 @@
   width: 24px;
   height: 24px;
 }
+.section__midle_right{
+  display: flex;
+  gap:160px;
+}
+.midle__right_ege{
+  display: flex;
+  flex-direction: column;
+}
+.right__ege_title, .right__project_title{
+  color: #302A3E;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+margin-bottom: 16px;
+}
+.right__ege_text, .right__project_text{
+  color: rgba(48, 42, 62, 0.60);
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+margin-bottom: 8px;
+}
+.right__ege_boxLink{
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  gap: 34px 56px;
+}
+.right__ege_Link{
+color: #2188F6;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px;
+text-decoration-line: underline;
+}

@@ -19,7 +19,8 @@
   top: 15%;
 }
 .container__header_carts {
-  display: flex;
+  display: flex; 
+  position: relative;
   padding: 4px 8px;
   justify-content: center;
   align-items: center;
@@ -40,7 +41,31 @@
   border-radius: 16px;
 }
 .three {
+  position: absolute;
+  left:200px;
   width: 24px;
   height: 24px;
 }
-
+.container__title_carts{
+  color:  #302A3E;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+margin-bottom: 36px;
+}
+.container__text_carts{
+  color:#302A3E;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px;
+margin-bottom: 24px;
+}
+.container__link_carts{
+  color: #302A3E;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+}
