@@ -12,6 +12,7 @@
   border-radius: 162.983px;
   border: 2.163px solid #fff;
   padding: 16px 23px;
+  cursor: pointer;
 }
 .button__items::after {
   content: url(/img/Union.png);

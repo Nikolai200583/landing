@@ -19,7 +19,7 @@ const ButtonItems = ({ text }: props) => {
   })
 
   return (
-    <animated.a href="#" className="button__items" onClick={() => toggle(!state)}
+    <animated.a className="button__items" onClick={() => toggle(!state)}
     style={{
       opacity: x.to({ range: [0, 1], output: [0.3, 1] }),
       scale: x.to({
