@@ -5,9 +5,11 @@ const TheHeader = () => {
     <header className="header">
       <div className="header__box">
         <div className="header__box_logo">
+        <Link href="/">
           <svg>
             <use xlinkHref="img/sprite.svg#icon-logo"></use>
           </svg>
+          </Link>
         </div>
         <div className="header__box_link">
           <Link href="/items">Предметы</Link>

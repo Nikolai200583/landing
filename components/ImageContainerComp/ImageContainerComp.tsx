@@ -1,6 +1,4 @@
 import "./style.css";
-import { animated } from '@react-spring/web'
-
 const ImageContainerComp = () => {
   return (
     <div className="container__svg">
