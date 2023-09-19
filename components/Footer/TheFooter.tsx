@@ -1,3 +1,4 @@
+import { SvgComponent } from "../SvgComponent/SvgComponent";
 import "./style.css";
 
 const TheFooter = () => {
@@ -5,31 +6,21 @@ const TheFooter = () => {
     <footer className="footer">
       <div className="footer__section_hi">
         <div className="footer__icon_logo">
-          <svg>
-            <use xlinkHref="img/sprite.svg#icon-logo"></use>
-          </svg>
+          <SvgComponent pathName={"icon-logo"} />
         </div>
         <div className="iconBlock">
           <div className="footer__icon">
-            <svg>
-              <use xlinkHref="img/sprite.svg#icon-tube"></use>
-            </svg>
+            <SvgComponent pathName={"icon-tube"} />
           </div>
           <div className="footer__icon">
-            <svg>
-              <use xlinkHref="img/sprite.svg#icon-VK"></use>
-            </svg>
+            <SvgComponent pathName={"icon-VK"} />
           </div>
           <div className="footer__icon">
-            <svg>
-              <use xlinkHref="img/sprite.svg#icon-tg"></use>
-            </svg>
+            <SvgComponent pathName={"icon-tg"} />
           </div>
         </div>
         <a className="footer__up" href="#">
-        <svg className="up">
-              <use xlinkHref="img/sprite.svg#up"></use>
-            </svg>
+          <SvgComponent className={"up"} pathName={"up"} />
           Наверх
         </a>
       </div>
@@ -69,24 +60,32 @@ const TheFooter = () => {
             </div>
           </div>
         </div>
-          <div className="section__midle_right">
-            <div className="midle__right_ege">
-              <h2 className="right__ege_title">NeoFamily - умная подготовка к ЕГЭ</h2>
-              <p className="right__ege_text">Предметы</p>
-              <p className="right__ege_text">Теория</p>
-              <p className="right__ege_text">Повторение</p>
-              <p className="right__ege_text">Тесты</p>
-              <div className="right__ege_boxLink">
-                <a className="right__ege_Link" href="#">Политика конфиденциальности</a>
-                <a className="right__ege_Link" href="#">Оферта</a>
-                <a className="right__ege_Link" href="#">Пользовательское соглашение</a>
-              </div>
-            </div>
-            <div className="midle__right_project">
-              <h2 className="right__project_title">Проекты</h2>
-              <p className="right__project_text">NeoFamily</p>
+        <div className="section__midle_right">
+          <div className="midle__right_ege">
+            <h2 className="right__ege_title">
+              NeoFamily - умная подготовка к ЕГЭ
+            </h2>
+            <p className="right__ege_text">Предметы</p>
+            <p className="right__ege_text">Теория</p>
+            <p className="right__ege_text">Повторение</p>
+            <p className="right__ege_text">Тесты</p>
+            <div className="right__ege_boxLink">
+              <a className="right__ege_Link" href="#">
+                Политика конфиденциальности
+              </a>
+              <a className="right__ege_Link" href="#">
+                Оферта
+              </a>
+              <a className="right__ege_Link" href="#">
+                Пользовательское соглашение
+              </a>
             </div>
           </div>
+          <div className="midle__right_project">
+            <h2 className="right__project_title">Проекты</h2>
+            <p className="right__project_text">NeoFamily</p>
+          </div>
+        </div>
       </div>
       <div className="footer__recuisit">
         <p>© ООО “НЕОФЭМИЛИ”</p>

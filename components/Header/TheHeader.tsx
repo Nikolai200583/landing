@@ -1,3 +1,4 @@
+import { SvgComponent } from "../SvgComponent/SvgComponent";
 import "./style.css";
 import Link from "next/link";
 const TheHeader = () => {
@@ -5,10 +6,8 @@ const TheHeader = () => {
     <header className="header">
       <div className="header__box">
         <div className="header__box_logo">
-        <Link href="/">
-          <svg>
-            <use xlinkHref="img/sprite.svg#icon-logo"></use>
-          </svg>
+          <Link href="/">
+            <SvgComponent pathName={"icon-logo"} />
           </Link>
         </div>
         <div className="header__box_link">
@@ -19,10 +18,8 @@ const TheHeader = () => {
         </div>
       </div>
       <a href="#" className="header__button">
-        <svg className="iconContainer">
-          <use xlinkHref="img/sprite.svg#iconContainer"></use>
-        </svg>
-        В банк знаний
+        <SvgComponent className={"iconContainer"} pathName={"iconContainer"} />В
+        банк знаний
       </a>
     </header>
   );

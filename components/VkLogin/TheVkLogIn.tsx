@@ -1,3 +1,4 @@
+import { SvgComponent } from "../SvgComponent/SvgComponent";
 import "./style.css";
 
 type NewProps = {
@@ -19,9 +20,7 @@ const TheVkLogIn = ({
       <p className="container__text_vk">{text}</p>
       <div className="buttonBox_vk">
         <button className="container__button_vk">
-          <svg className="vk">
-            <use xlinkHref="img/sprite.svg#vk"></use>
-          </svg>
+        <SvgComponent className={"vk"} pathName={"vk"} />
           {buttonTextVk}
         </button>
         <button className="container__button_enter">{buttonTextEnter}</button>

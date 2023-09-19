@@ -1,3 +1,4 @@
+import { SvgComponent } from "../SvgComponent/SvgComponent";
 import "./style.css";
 
 type NewProps = {
@@ -12,9 +13,7 @@ const Carts = ({ title, text, link, span }: NewProps) => {
     <div className="container__carts">
       <div className="container__header_carts">
         <span className="container__header_carts_span">{span}</span>
-        <svg className="three">
-          <use xlinkHref="img/sprite.svg#three"></use>
-        </svg>
+        <SvgComponent className={"three"} pathName={"three"} />
       </div>
       <h3 className="container__title_carts">{title}</h3>
       <p className="container__text_carts">{text}</p>
